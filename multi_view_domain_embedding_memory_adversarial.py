@@ -17,7 +17,7 @@ class EmbeddingModel(object):
         num_steps = config.num_steps
         hidden_size= config.hidden_size
         vocab_size = config.vocab_size
-
+#
         #inputs: features, mask and labels
         self.input_data = tf.placeholder(tf.int32, [num_steps, batch_size], name="inputs")
         self.mask= tf.placeholder(tf.int64, [batch_size], name="mask")
